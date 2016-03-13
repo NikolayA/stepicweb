@@ -62,15 +62,15 @@ WSGI_APPLICATION = 'ask.wsgi.application'
 #    }
 #}
 
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.mysql',
-        'NAME': ’stepicweb’,
-        'USER': ’stepic’,
-        'PASSWORD': ’superpassword’,
-        'HOST': 'localhost',
-        'PORT': '',
-    }
+DATABASES = {                                                                   
+  'default': {                                                                  
+        'ENGINE': 'django.db.backends.mysql',                                   
+        'NAME': 'stepicweb',                                                    
+        'USER': 'stepic',                                                       
+        'PASSWORD': 'superpassword',                                            
+        'HOST': 'localhost',                                                    
+        'PORT': '',                                                             
+   }                                                                            
 }
 
 # Internationalization
