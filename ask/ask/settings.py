@@ -17,7 +17,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(__file__))
 # See https://docs.djangoproject.com/en/1.6/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'kdfeejt1$j*i&h$4zy4r6w0&(iznitggm%(h##9j$42-fpnch)'
+SECRET_KEY = '5dtb%6g44234l+_tu=v&&sns8!$x&3g^2^-m4x+$xz(s+z*6w-'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -30,13 +30,12 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = (
-	'django.contrib.admin',
-	'django.contrib.auth',
-	'django.contrib.contenttypes',
-	'django.contrib.sessions',
-	'django.contrib.messages',
-	'django.contrib.staticfiles',
-	'qa',
+    'django.contrib.admin',
+    'django.contrib.auth',
+    'django.contrib.contenttypes',
+    'django.contrib.sessions',
+    'django.contrib.messages',
+    'django.contrib.staticfiles',
 )
 
 MIDDLEWARE_CLASSES = (
@@ -46,10 +45,6 @@ MIDDLEWARE_CLASSES = (
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
-)
-
-PASSWORD_HASHERS = (
-    'django.contrib.auth.hashers.PBKDF2PasswordHasher',
 )
 
 ROOT_URLCONF = 'ask.urls'
@@ -67,6 +62,17 @@ DATABASES = {
         'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
     }
 }
+
+#DATABASES = {                                                                   
+#  'default': {                                                                  
+#        'ENGINE': 'django.db.backends.mysql',                                   
+#        'NAME': 'stepicweb',                                                    
+#        'USER': 'stepic',                                                       
+#        'PASSWORD': 'superpassword',                                            
+#        'HOST': 'localhost',                                                    
+#        'PORT': '',                                                             
+#   }                                                                            
+#}
 
 # Internationalization
 # https://docs.djangoproject.com/en/1.6/topics/i18n/
